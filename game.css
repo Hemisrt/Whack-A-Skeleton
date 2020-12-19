@@ -172,7 +172,7 @@ div#gameType {
  	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url("../img/vessel.gif");
+	background-image: url("vessel.gif");
 }
 
 div#gameType p {
