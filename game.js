@@ -2,12 +2,12 @@
 // lobby and game audios from the Undertale game and soundtrack.
 // hit audio occurs when a monster has been attacked/hit by the player.
 
-var lobby = new Audio('audio/Another Him.wav');
+var lobby = new Audio('Another Him.wav');
 var game;
 var content;
-var hit = new Audio('audio/snd_damage_c.wav');
-var images = ['img/sans.png', 'img/papyrus.png'];
-var images2 = ['img/asriel.png', 'img/asriel2.png'];
+var hit = new Audio('snd_damage_c.wav');
+var images = ['sans.png', 'papyrus.png'];
+var images2 = ['asriel.png', 'asriel2.png'];
 $(document).ready(function() {
   // Enabling autoplay provides better demonstration of playing this music.
   // When loading the page.
@@ -26,14 +26,14 @@ $(document).ready(function() {
               'as many Sans and Papyrus as you can. The Skeletons appear randomly so be ready to have a ' +
               '<span>bad time</span>!</p>';
     $('div#content').prepend(content);
-    $('html, body').css('background-image', 'url(img/background.jpg)');
-    $('div#gamespace').css('background-image', 'url(img/background2.jpg)');
-    game = new Audio('audio/100 Megalovania.m4a');
+    $('html, body').css('background-image', 'url(background.jpg)');
+    $('div#gamespace').css('background-image', 'url(background2.jpg)');
+    game = new Audio('100 Megalovania.m4a');
     $('div#controls').prepend('<span id="showing">Game Music: Megalovania</span>');
-    lobby = new Audio('audio/15 Sans..m4a');
-    $('div#content').append('<img src="img/sansmoving.gif" id="sansmoving"/>');
-    $('div#content').append('<img src="img/papyrusmoving.gif" id="papyrusmoving"/>');
-    $('div#content').append('<img src="img/sanspapyrusdance.gif" id="sanspapyrusdance"/>');
+    lobby = new Audio('15 Sans..m4a');
+    $('div#content').append('<img src="sansmoving.gif" id="sansmoving"/>');
+    $('div#content').append('<img src="papyrusmoving.gif" id="papyrusmoving"/>');
+    $('div#content').append('<img src="sanspapyrusdance.gif" id="sanspapyrusdance"/>');
     lobby.play();
     lobby.loop = true;
     $('button#music_button').click(function(){
@@ -44,35 +44,35 @@ $(document).ready(function() {
       });
       $('button#megalovania').click(function() {
         $('span#showing').remove();
-        game = new Audio('audio/100 Megalovania.m4a');
+        game = new Audio('100 Megalovania.m4a');
         $('div#controls').prepend('<span id="showing">Game Music: Megalovania</span>');
       });
       $('button#songSans').click(function() {
         $('span#showing').remove();
-        game = new Audio('audio/72 Song That Might Play When You Fight Sans.m4a');
+        game = new Audio('72 Song That Might Play When You Fight Sans.m4a');
         $('div#controls').prepend('<span id="showing">Game Music: S.T.M.P.W.Y.F.Sans</span>');
       });
       $('button#megalovaniaCancer').click(function() {
         $(this).data('clicked', true);
         $('span#showing').remove();
-        game = new Audio('audio/Megalovania Cancer.mp3');
+        game = new Audio('Megalovania Cancer.mp3');
         $('div#controls').prepend('<span id="showing">Game Music: Megalovania Cancer</span>');
       });
       $('button#bonetrousle').click(function() {
         $(this).data('clicked', true);
         $('span#showing').remove();
-        game = new Audio('audio/24 Bonetrousle.m4a');
+        game = new Audio('24 Bonetrousle.m4a');
         $('div#controls').prepend('<span id="showing">Game Music: Bonetrousle</span>');
       });
       $('button#megalovaniaMusical').click(function() {
         $('span#showing').remove();
-        game = new Audio('audio/Megalovania Musical.wav');
+        game = new Audio('Megalovania Musical.wav');
         $('div#controls').prepend('<span id="showing">Game Music: Megalovania Musical</span>');
       });
       $('button#musicalV2').click(function() {
         $(this).data('clicked', true);
         $('span#showing').remove();
-        game = new Audio('audio/Musical V2.wav');
+        game = new Audio('Musical V2.wav');
         $('div#controls').prepend('<span id="showing">Game Music: ???</span>');
       });
     });
@@ -86,10 +86,10 @@ $(document).ready(function() {
   $('#pacifist').click(function() {
     $(this).data('clicked', true);
     lobby.pause();
-    $('html, body').css('background-image', 'url(img/background4.jpg)');
-    $('div#gamespace').css('background-image', 'url(img/Monster_Encouragement.png)');
+    $('html, body').css('background-image', 'url(background4.jpg)');
+    $('div#gamespace').css('background-image', 'url(Monster_Encouragement.png)');
     $('div#gamespace').css('height', '480px')
-    $('div#content').append('<img src="img/asrielbobbing.gif" id="asrielmoving"/>');
+    $('div#content').append('<img src="asrielbobbing.gif" id="asrielmoving"/>');
     content = '<h1>Whack-A-God of Hyperdeath</h1>'+
               '<p>You are close to the end of your true pacifist ending, ' +
               'but your friends are trapped and you must save them. After clicking "start", you will have 30 seconds to attack ' +
@@ -98,7 +98,7 @@ $(document).ready(function() {
     $('div#content').prepend(content);
     game = new Audio('audio/87 Hopes and Dreams.m4a');
     $('div#controls').prepend('<span id="showing">Game Music: Hopes and Dreams</span>');
-    lobby = new Audio("audio/86 Don't Give Up.m4a");
+    lobby = new Audio("86 Don't Give Up.m4a");
     lobby.play();
     lobby.loop = true;
     $('button#music_button').click(function(){
@@ -109,13 +109,13 @@ $(document).ready(function() {
       });
       $('button#hopesDreams').click(function() {
         $('span#showing').remove();
-        game = new Audio('audio/87 Hopes and Dreams.m4a');
+        game = new Audio('87 Hopes and Dreams.m4a');
         $('div#controls').prepend('<span id="showing">Game Music: Hopes and Dreams</span>');
       });
       $('button#saveWorld').click(function() {
         $(this).data('clicked', true);
         $('span#showing').remove();
-        game = new Audio('audio/89 SAVE the World.m4a');
+        game = new Audio('89 SAVE the World.m4a');
         $('div#controls').prepend('<span id="showing">Game Music: SAVE the World</span>');
       });
     });
@@ -140,20 +140,20 @@ function gameStart() {
   score = 0;
   $('span#score').html(0 + " pts");
   if ($('#genocide').data('clicked')) {
-    $('html, body').css('background-image', 'url(img/background3.jpg)');
+    $('html, body').css('background-image', 'url(background3.jpg)');
     if ($('#megalovaniaCancer').data('clicked') || $('#musicalV2').data('clicked')) {
-      $('div#gamespace').css('background-image', 'url(img/SANESS.gif)');
+      $('div#gamespace').css('background-image', 'url(SANESS.gif)');
     } else if ($('#bonetrousle').data('clicked')) {
-      $('div#gamespace').css('background-image', 'url(img/papyrusFight.gif)');
+      $('div#gamespace').css('background-image', 'url(papyrusFight.gif)');
     } else {
-      $('div#gamespace').css('background-image', 'url(img/sansfight.gif)');
+      $('div#gamespace').css('background-image', 'url(sansfight.gif)');
     }
   } else if ($('#pacifist').data('clicked')) {
-    $('html, body').css('background-image', 'url(img/AsrielFightBackground.png)');
+    $('html, body').css('background-image', 'url(AsrielFightBackground.png)');
     if ($('#saveWorld').data('clicked')) {
-      $('div#gamespace').css('background-image', 'url(img/asrielFinal.gif)');
+      $('div#gamespace').css('background-image', 'url(asrielFinal.gif)');
     } else {
-      $('div#gamespace').css('background-image', 'url(img/asriel.gif)');
+      $('div#gamespace').css('background-image', 'url(asriel.gif)');
     }
   }
   $("button#music_button").attr("disabled", true);
@@ -191,11 +191,11 @@ function timer() {
       alert("Times up! Your score is " + score);
       $('div#timer').hide();
       if ($("#genocide").data('clicked')) {
-        $('html, body').css('background-image', 'url(img/background.jpg)');
-        $('div#gamespace').css('background-image', 'url(img/background2.jpg)');
+        $('html, body').css('background-image', 'url(background.jpg)');
+        $('div#gamespace').css('background-image', 'url(background2.jpg)');
       } else if ($('#pacifist').data('clicked')) {
-        $('html, body').css('background-image', 'url(img/background4.jpg)');
-        $('div#gamespace').css('background-image', 'url(img/Monster_Encouragement.png)');
+        $('html, body').css('background-image', 'url(background4.jpg)');
+        $('div#gamespace').css('background-image', 'url(Monster_Encouragement.png)');
       }
       $("button#start_button").attr("disabled", false);
       game.pause();
@@ -215,13 +215,13 @@ function addMole() {
 
 function addMole2() {
   if ($('#saveWorld').data('clicked')) {
-    var img = $('<img src="img/asriel2.png" id="asriel2" style="left: ' + randomX() + 'px; top: ' + randomY2() + 'px;">');
+    var img = $('<img src="asriel2.png" id="asriel2" style="left: ' + randomX() + 'px; top: ' + randomY2() + 'px;">');
     $('div#gamespace').append(img);
     setTimeout(function() {
       img.remove();
     }, poof);
   } else {
-    var img = $('<img src="img/asriel.png" id="asriel" style="left: ' + randomX() + 'px; top: ' + randomY2() + 'px;">');
+    var img = $('<img src="asriel.png" id="asriel" style="left: ' + randomX() + 'px; top: ' + randomY2() + 'px;">');
     $('div#gamespace').append(img);
     setTimeout(function() {
       img.remove();
