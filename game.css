@@ -1,0 +1,184 @@
+/* CSS Document */
+
+html, body {
+	width: 700px;
+	margin: 0 auto;
+	font-family: undertaleFont;
+	font-size: 13px;
+	color: #333;
+ 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	/*
+		Background color used for outside the blank area of the background
+		If a user zooms out, they'll see background color of black surrounding the
+		background image.
+	*/
+}
+
+@font-face {
+  font-family: undertaleFont;
+  src: url('DTM-Mono.otf');
+}
+
+h1 {
+	margin: 2px;
+	color: #FFF;
+}
+
+p {
+	color: #FFF;
+}
+
+p span {
+	color: #00FFFF;
+}
+
+img#logo {
+	width: 25%;
+}
+
+img#logo2 {
+	width: 25%;
+}
+
+div#timer {
+	float: left;
+	padding-top: 3%;
+}
+
+img#sansmoving {
+	width: 24%;
+	height: 34%;
+	z-index: 1;
+}
+
+img#papyrusmoving {
+	z-index: 0;
+}
+
+img#sanspapyrusdance {
+	margin-left: 7.5%;
+	margin-top: 0%;
+}
+
+body img#asrielmoving {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span#showing {
+	margin-right: 10%;
+}
+
+br {
+	margin-right: 10%;
+}
+
+button {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px; }
+
+div#content {
+	padding: 20px;
+	background-color: #000000; }
+
+div#controls {
+	text-align: right; }
+
+div#controls span {
+	font-weight: bold;
+	color: #FFF; }
+
+a#genocide {
+	text-decoration: none;
+	color: #00FFFF;
+}
+
+span#save, a#pacifist {
+		font-size: 100%;
+    background: linear-gradient(to right, #FF0000, #FFA500, #FFFF00, #00FF00, #0000FF, #FF00FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+div#controls button {
+	margin-left: 20px; }
+
+div#timer {
+	display: none;
+	font-weight: bold;
+	margin-left: 20px;
+	color: #FFF; }
+
+div#gamespace {
+	margin: 20px;
+	padding: 10px;
+	height: 350px;
+	background-color: #FFF;
+	border: 2px solid #2D2D2D;
+	overflow: hidden;
+	position: relative;
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+div#gamespace img {
+	position: absolute;
+	width: 15%;
+	height: 25%;
+}
+
+div#gamespace img#asriel {
+	width: 15%;
+	height: 20%;
+}
+
+div#gamespace img#asriel2 {
+	width: 22.5%;
+	height: 17.5%;
+}
+
+div.modal {
+	display: none;
+	background-color: #0000FF;
+}
+
+div#gameType {
+	font-size: 200%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+ 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/vessel.gif");
+}
+
+div#gameType p {
+	margin-top: 40%;
+}
+
+div#rainbow {
+	background-color: #000000;
+}

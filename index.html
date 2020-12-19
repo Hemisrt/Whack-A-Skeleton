@@ -1,0 +1,57 @@
+<!--
+		Name: Trenton Greenlee
+		Date: 3/22/2020
+		Class: CSCI2447, Javascript Fundamentals
+		Project VII
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Whack-An-Undertale (CSCI2447)</title>
+
+    <!-- CSS styles: This is for me to worry about; not you. -->
+	  <link href="css/game.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    <script src="js/game.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="modal" id="gameType">
+        <p>Who do you want to fight?</p>
+      <div id="rainbow">
+        <a href="#" rel="modal:close" id="genocide">Sans & Papyrus</a>&nbsp
+        <a href="#" rel="modal:close" id="pacifist">Asriel Dreemurr</a>
+      </div>
+    </div>
+    <div id="music" class="modal">
+      <p>What music do you want to play during the game?</p>
+      <a href="#" rel="modal:close"><button id="megalovania">Megalovania (Default)</button></a>
+      <a href="#" rel="modal:close"><button id="megalovaniaCancer">Megalovania Cancer</button></a>
+      <a href="#" rel="modal:close"><button id="songSans">Song That Might Play When You Fight Sans</button></a>
+      <a href="#" rel="modal:close"><button id="bonetrousle">Bonetrousle</button></a>
+      <a href="#" rel="modal:close"><button id="megalovaniaMusical">Megalovania Musical</button></a>
+      <a href="#" rel="modal:close"><button id="musicalV2">???</button></a>
+    </div>
+    <div id="music2" class="modal">
+      <p>What music do you want to play during the game?</p>
+      <a href="#" rel="modal:close"><button id="hopesDreams">Hopes and Dreams (Default)</button></a>
+      <a href="#" rel="modal:close"><button id="saveWorld">SAVE the World</button></a>
+    </div>
+  	<div id="content">
+      <a href="https://www.undertale.com" target="_blank"><img src="img/undertale-logo.png" id="logo"></a>
+      <a href="https://www.deltarune.com" target="_blank"><img src="img/deltarune-logo.png" id="logo2"></a>
+  		<div id="controls">
+        <div id="timer">30 seconds left</div>
+  			<span id="score">0 pts</span>
+  			<button type="button" id="music_button">Music</button>
+  			<button type="button" id="start_button">Start!</button>
+  		</div>
+
+  		<div id="gamespace"></div>
+  	</div>
+  </body>
+</html>
