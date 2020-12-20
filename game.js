@@ -96,7 +96,7 @@ $(document).ready(function() {
               'as many Asriel as you can. He appears randomly so be ready to ' +
               '<span id="save">SAVE the World</span>!</p>';
     $('div#content').prepend(content);
-    game = new Audio('audio/87 Hopes and Dreams.m4a');
+    game = new Audio('87 Hopes and Dreams.m4a');
     $('div#controls').prepend('<span id="showing">Game Music: Hopes and Dreams</span>');
     lobby = new Audio("86 Don't Give Up.m4a");
     lobby.play();
